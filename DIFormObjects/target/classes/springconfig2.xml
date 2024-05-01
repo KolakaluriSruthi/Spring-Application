@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="product1" class="com.spring.five.DIFormObjects.ProductBean"> 
+		<property name="productId" value="102"></property>
+		<property name="productName" value="Lipstic"></property>
+		<property name="productPrice" value="1000"></property>
+		<property name="productQuantity" value="20"></property>
+	</bean>
+	<bean id="order" class="com.spring.five.DIFormObjects.OrderBean">
+		<property name="orderId" value="111"></property>
+		<property name="product" ref="product1"></property>
+	</bean>
+</beans>

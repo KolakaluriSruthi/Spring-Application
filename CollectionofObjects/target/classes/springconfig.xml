@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="details" class="com.spring.eight.CollectionofObjects.Employee"> 
+		<property name="empName">
+			<list>
+				<value>Meghana</value>
+				<value>Gowthami</value>
+				<value>Pooja</value>
+				
+			</list>
+			
+		</property>
+		<property name="empNum">
+			<set>
+				<value>101</value>
+				<value>102</value>
+				<value>103</value>
+			</set>
+		</property>
+		<property name="empDeptno">
+			<map>
+				<entry key="sales" value="1"/>
+				<entry key="finance" value="2"/>
+				<entry key="chemistry" value="3"/>
+				
+			</map>
+		</property>
+		<property name="empSalary">
+			<props>
+				<prop key="20000"></prop>
+				<prop key="30000"></prop>
+				<prop key="40000"></prop>
+			</props>
+		</property>
+	</bean>
+</beans>

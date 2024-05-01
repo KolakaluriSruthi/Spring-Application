@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- <bean id="a" class="com.spring.nine._Autowiring.Second">
+		 <property name="id" value="101"></property>
+		 <property name="name" value="Sravanthi"></property>
+	 </bean>
+	<bean id="b" class="com.spring.nine._Autowiring.First">
+		<property name="second" ref="a"></property>
+	
+		 </bean>-->
+		 
+		 
+		 <!-- <bean id="a" class="com.spring.nine._Autowiring.Second">
+		 <property name="id" value="101"></property>
+		 <property name="name" value="Sravanthi"></property>
+	 </bean>
+	<bean id="b" class="com.spring.nine._Autowiring.First" autowire="byType">
+		  </bean>-->
+		  
+		 <!-- <bean id="second" class="com.spring.nine._Autowiring.Second">
+		 <property name="id" value="101"></property>
+		 <property name="name" value="Sravanthi"></property>
+	 </bean>
+	<bean id="b" class="com.spring.nine._Autowiring.First" autowire="byName">
+		  </bean>-->
+		  
+		   <bean id="second" class="com.spring.nine._Autowiring.Second">
+		 <property name="id" value="101"></property>
+		 <property name="name" value="Sravanthi"></property>
+	 </bean>
+	<bean id="b" class="com.spring.nine._Autowiring.First" autowire="constructor">
+		  </bean>
+		  
+</beans>
